@@ -370,3 +370,81 @@ footer {
     color: #052659;
     border: 2px solid #052659;
 }
+
+
+
+
+
+
+/* ABOUT */
+#about-page {
+    margin-top: 60px;
+    padding: 40px 40px 120px 40px;
+}
+
+#about-page > h1 {
+    font-size: 32px;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+
+.about-top {
+    margin-bottom: 250px;
+}
+
+.about-top h1 {
+    font-size: 32px;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+
+.about-text {
+    max-width: 1200px;
+    font-size: 18px;
+    line-height: 1.45;
+    margin-bottom: 60px;
+    font-weight: 400;
+}
+
+.about-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 140px;
+    margin-top: 120px;
+}
+
+.about-img > img {
+    width: 300px;
+    border-radius: 8px;
+    display: block;
+}
+
+.about-skills {
+    display: grid;
+    grid-template-columns: repeat(2, 120px);
+    gap: 28px;
+    align-self: center;
+}
+
+.skill > img {
+    width: 120px;
+    height: 120px;
+    border-radius: 20px;
+    display: block;
+    transition: 0.2s ease;
+}
+
+.skill > img:hover {
+    transform: scale(1.08);
+}
+
+
+
+
+
+
+
+
+
+/* MEDIA-QUERIES */
