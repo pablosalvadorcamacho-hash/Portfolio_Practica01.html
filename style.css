@@ -58,6 +58,14 @@ header {
     padding: 0 120px;
 }
 
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+
+
 /* PESO TEXTOS */
 .hero-text {
     max-width: 900px;
@@ -65,12 +73,24 @@ header {
 
 .hero-text > h1 {
     font-weight: 1000;
+    font-size: 115px;
 }
 
 .hero-text > p {
     font-weight: 500;
+    font-size: 22px;
 }
 
+span {
+    font-weight: 800;
+    font-size: 20px;
+    color: #120F0F;
+    letter-spacing: 0.5px;
+}
+
+menu > a.main {
+    color: white;
+}
 
 
 /* BOTONES */
@@ -81,4 +101,13 @@ header {
     border-radius: 8px;
     text-decoration: none;
     font-weight: 700;
+}
+
+
+
+/* IMG */
+.logo > img {
+    height: 35px;
+    width: auto;
+    display: block;
 }
