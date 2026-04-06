@@ -1,14 +1,48 @@
+/* TIPOGRAFÍA GENERAL */
 @font-face {
     font-family: 'Creato Display';
-    src: url('fonts/CreatoDisplay-RegularItalic.otf');
+    src: url('fonts/CreatoDisplay-Regular.otf');
     font-weight: 400;
 }
 
+@font-face {
+    font-family: 'Creato Display';
+    src: url('fonts/CreatoDisplay-Medium.otf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Creato Display';
+    src: url('fonts/CreatoDisplay-Bold.otf');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Creato Display';
+    src: url('fonts/CreatoDisplay-ExtraBold.otf');
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: 'Creato Display';
+    src: url('fonts/CreatoDisplay-Black.otf');
+    font-weight: 1000;
+}
+
+
+
+/* BASE WEB */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    font-family: 'Creato Display', sans-serif;
+}
+
+:root {
+    background-color: #F4F0E8;
+    color: black;
 }
 
 nav {
@@ -17,8 +51,34 @@ nav {
     padding: 0 40px;
 }
 
+header {
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    padding: 0 120px;
+}
+
+/* PESO TEXTOS */
+.hero-text {
+    max-width: 900px;
+}
+
+.hero-text > h1 {
+    font-weight: 1000;
+}
+
+.hero-text > p {
+    font-weight: 500;
+}
 
 
 
-
-
+/* BOTONES */
+.hero-btn {
+    background-color: #485B72;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+}
