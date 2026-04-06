@@ -7,4 +7,4 @@ Adrián, si lees esto perdón, pero la verdad esq no he escrito nada en el ReadM
 
 
 ## PONER TIPOGRAFÍA CREATO DISPLAY
-He descubierto q hay otra manera sino es con google y es creando la carpeta fonts y metiendolas ahí. y luego hacer lo del @font-face.
+He descubierto q hay otra manera de añadir tipografías si no están disponibles en GoogleFonts, y es creando una carpeta que yo he llamado "fonts" y metiendolas ahí. y luego hacer lo del @font-face.
