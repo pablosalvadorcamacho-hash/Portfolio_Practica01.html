@@ -303,13 +303,13 @@ footer {
 /* GALLERY PAGE */
 #gallery-page {
     margin-top: 60px;
-    padding: 80px 40px 120px 40px;
+    padding: 30px 40px 120px 40px;
 }
 
 #gallery-page > h1 {
     font-size: 32px;
     font-weight: 900;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
 }
 
 .gallery-intro {
