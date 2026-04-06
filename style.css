@@ -46,11 +46,18 @@ body {
 }
 
 nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 2px 8px rgba(0,0,0,1);
     background-color: #5483B3;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 12px 32px;
+
+    z-index: 99999;
 }
 
 nav > a {
@@ -59,45 +66,51 @@ nav > a {
 }
 
 header {
-    min-height: 650px;
+    margin-top: 60px;
+    min-height: 600px;
     display: flex;
     align-items: center;
-    padding: 0 120px;
-}
+    justify-content: center;
+    }
 
-.menu {
+.menus {
     list-style: none;
     display: flex;
     gap: 32px;
 }
 
-.menu > a {
+.menus a {
     font-size: 16px;
     font-weight: 700;
+    text-decoration: none;
+    color: #120F0F;
 }
 
-.menu > a.main {
-    color: white;
+.menus a.main {
+    color: #FFFFFF;
 }
 
-
+.menus a:hover {
+    opacity: 0.7;
+    color: #FFFFFF;
+}
 
 /* PESO TEXTOS */
 .hero-text {
-    max-width: 900px;
+    max-width: 760px;
 }
 
 .hero-text > h1 {
     font-weight: 900;
     font-size: 92px;
     line-height: 1;
-    margin-bottom: 12px;
+    margin-bottom: 16px;
 }
 
 .hero-text > p {
     font-weight: 500;
     font-size: 22px;
-    margin-bottom: 28px;
+    margin-bottom: 24px;
     max-width: 760px;
 }
 
@@ -112,6 +125,7 @@ header {
 
 /* BOTONES */
 .hero-btn {
+    display: inline-block;
     background-color: #485B72;
     color: white;
     padding: 12px 20px;
@@ -173,15 +187,19 @@ section {
 .project-card > img {
     width: 100%;
     display: block;
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
 .project-card > p {
     font-size: 15px;
-    line-height: 1.4;
+    line-height: 1.35;
     font-weight: 400;
 }
 
+/* la columna central */
+.middle-project {
+    padding-top: 0;
+}
 
 
 /* CONTACT */
@@ -240,6 +258,12 @@ footer {
     gap: 36px;
 }
 
+.footer-copy {
+    font-size: 14px;
+    margin-bottom: 14px;
+    color: #2B2726;
+}
+
 .footer-links > a {
     font-size: 14px;
     font-weight: 400;
@@ -249,7 +273,7 @@ footer {
 
 
 .scroll-top {
-    position: absolute;
+    position: fixed;
     right: 24px;
     bottom: 24px;
     width: 34px;
@@ -261,4 +285,5 @@ footer {
     align-items: center;
     text-decoration: none;
     border-radius: 4px;
+    z-index: 99999;
 }
