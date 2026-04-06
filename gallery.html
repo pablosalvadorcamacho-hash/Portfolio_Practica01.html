@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery</title>
+    <title>GALLERY</title>
 
     <!-- ICONOS DE FONT-AWESOME  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -12,9 +12,64 @@
 </head>
 <body>
     
-    <header>
+    <nav>
+        <a href="index.html" class="logo">
+            <img src="img/firma-propia-logo.png" alt="Logo Pablo">
+        </a>
+            
+        <ul class="menus">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutme.html">About</a></li>    
+            <li><a href="gallery.html" class="main">Gallery</a></li>
+        </ul>
 
-    </header>
+       <span class="navi-icon">Vador-GPH</span>
+    </nav>
+
+    <main>
+        <section id="gallery-page">
+            <h1>GALLERY</h1>
+            <p class="gallery-intro">
+                Here you can find a selection of my personal works, including photographs, illustrations, and visuals that I've created, along with some pieces I especially value and feel connected to.
+            </p>
+
+            <div class="gallery-grid">
+                <img src="img/versionada.png" alt="Gallery image 1">
+                <img src="img/foto-jardin.jpeg" alt="Gallery image 2">
+                <img src="img/humanos-polinizados.png" alt="Gallery image 3">
+                <img src="img/poster-scuffers.png" alt="Gallery image 4">
+                <img src="img/TODO-ENFOCADO.JPG" alt="Gallery image 5">
+                <img src="img/plano-en-detalle.JPG" alt="Gallery image 6">
+            </div>
+
+            <div class="gallery-cta">
+                <p>Let's work together! Feel free to reach out if you'd like to work together or just say hi.</p>
+                <a href="index.html#contact" class="contact-btn">Contact me</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+    <div class="footer-icons">
+        <a href="https://dribbble.com/"><i class="fa-brands fa-dribbble"></i></a>
+        <a href="https://github.com/"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+
+    <div class="footer-copy">
+        © 2026 Vador GPH
+    </div>
+
+    <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Sales and Refunds</a>
+        <a href="#">Legal</a>
+    </div>
+
+    <a href="#gallery-page" class="scroll-top"><i class="fa-solid fa-chevron-up"></i></a>
+</footer>
 
 </body>
 </html>

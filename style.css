@@ -253,6 +253,14 @@ footer {
     color: #120F0F;
 }
 
+.footer-icons a:hover {
+    color: #052659;
+}
+
+.footer-icons a {
+    transition: color 0.3s ease;
+}
+
 .footer-links {
     display: flex;
     gap: 36px;
@@ -286,4 +294,73 @@ footer {
     text-decoration: none;
     border-radius: 4px;
     z-index: 99999;
+}
+
+
+
+
+
+/* GALLERY PAGE */
+#gallery-page {
+    margin-top: 60px;
+    padding: 80px 40px 120px 40px;
+}
+
+#gallery-page > h1 {
+    font-size: 32px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.gallery-intro {
+    max-width: 760px;
+    font-size: 16px;
+    line-height: 1.35;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-bottom: 120px;
+}
+
+.gallery-grid > img {
+    width: calc(33.33% - 16px);
+    border-radius: 8px;
+    display: block;
+    object-fit: cover;
+}
+
+.gallery-cta {
+    max-width: 520px;
+}
+
+.gallery-cta > p {
+    font-size: 16px;
+    line-height: 1.35;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+
+.contact-btn {
+    display: inline-block;
+    background-color: #052659;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 700;
+    border: 2px solid #052659;
+    transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: transparent;
+    color: #052659;
+    border: 2px solid #052659;
 }
