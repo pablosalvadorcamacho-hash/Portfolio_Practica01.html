@@ -67,11 +67,13 @@ nav > a {
 
 header {
     margin-top: 60px;
-    min-height: 750px;
+    min-height: 700px;
     display: flex;
     align-items: center;
+    padding-left: 6%;
+    padding-right: 6%;
     justify-content: center;
-    }
+}
 
 .menus {
     list-style: none;
@@ -97,19 +99,20 @@ header {
 
 /* PESO TEXTOS */
 .hero-text {
-    max-width: 760px;
+    max-width: 980px;
+    width: 100%;
 }
 
 .hero-text > h1 {
-    font-weight: 900;
     font-size: 92px;
     line-height: 1;
     margin-bottom: 16px;
+    font-weight: 900;
 }
 
 .hero-text > p {
-    font-weight: 500;
     font-size: 22px;
+    line-height: 1.35;
     margin-bottom: 24px;
     max-width: 760px;
 }
@@ -162,6 +165,7 @@ section {
 /* PROJECTS */
 #projects {
     margin-bottom: 140px;
+    margin-top: 225px;
 }
 
 #projects > h2 {
@@ -172,7 +176,7 @@ section {
 
 .projects-container {
     display: flex;
-    align-items: flex-start;
+    align-items: stretch;
     gap: 40px;
     justify-content: center;
 }
@@ -181,6 +185,7 @@ section {
     width: 32%;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: 18px;
 }
 
@@ -191,7 +196,7 @@ section {
 }
 
 .project-card > p {
-    font-size: 15px;
+    font-size: 17px;
     line-height: 1.35;
     font-weight: 400;
 }
@@ -204,7 +209,8 @@ section {
 
 /* CONTACT */
 #contact {
-    margin-bottom: 120px;
+    margin-top: 140px;
+    margin-bottom: 140px;
 }
 
 #contact > h2 {
@@ -217,6 +223,7 @@ section {
     display: flex;
     flex-direction: column;
     gap: 28px;
+    margin-top: 350px;
 }
 
 .contact-info > p {
@@ -449,215 +456,6 @@ footer {
 
 
 /* MEDIA QUERIES */
-/* TABLET */
-@media screen and (max-width: 720px) {
-    nav {
-        padding: 12px 24px;
-    }
-
-    .menus {
-        gap: 24px;
-    }
-
-    .menus a {
-        font-size: 15px;
-    }
-
-    .navi-icon {
-        font-size: 18px;
-    }
-
-    .logo > img {
-        height: 30px;
-    }
-
-    header {
-        margin-top: 60px;
-        min-height: 500px;
-        padding-left: 70px;
-        padding-right: 40px;
-    }
-
-    .hero-text {
-        max-width: 620px;
-    }
-
-    .hero-text > h1 {
-        font-size: 72px;
-    }
-
-    .hero-text > p {
-        font-size: 18px;
-        max-width: 620px;
-    }
-
-    .hero-btn {
-        font-size: 14px;
-        padding: 10px 18px;
-    }
-
-    section {
-        padding: 0 24px;
-    }
-
-    .about-top {
-        margin-bottom: 90px;
-    }
-
-    .about-top h1 {
-        font-size: 26px;
-        margin-bottom: 26px;
-    }
-
-    .projects-container {
-        gap: 24px;
-    }
-
-    .project-card {
-        width: 31%;
-    }
-
-    .project-card > p {
-        font-size: 14px;
-    }
-
-    .contact-info > p {
-        font-size: 16px;
-    }
-
-    .contact-btn {
-        padding: 12px 20px;
-        font-size: 14px;
-    }
-
-    #gallery-page {
-        padding: 30px 24px 100px 24px;
-    }
-
-    .gallery-grid {
-        gap: 20px;
-    }
-
-    .gallery-grid > img {
-        width: calc(50% - 10px);
-        height: 220px;
-    }
-
-    .gallery-intro {
-        font-size: 15px;
-        max-width: 680px;
-    }
-
-    .gallery-cta {
-        max-width: 600px;
-        margin-top: 140px;
-    }
-
-    .gallery-cta > p {
-        font-size: 15px;
-        line-height: 1.4;
-    }
-
-    #about-page {
-        margin-top: 56px;
-        padding: 40px 38px 100px 38px;
-    }
-
-    .about-text {
-        max-width: 100%;
-        font-size: 15px;
-        line-height: 1.4;
-    }
-
-    .about-bottom {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 70px;
-        margin-top: 0;
-    }
-
-    .about-img {
-        order: 2;
-    }
-
-    .about-img img {
-        width: 410px;
-        border-radius: 8px;
-        display: block;
-    }
-
-    .about-skills {
-        order: 1;
-        display: grid;
-        grid-template-columns: repeat(4, 110px);
-        gap: 18px;
-        justify-content: center;
-    }
-
-    .skill img {
-        width: 110px;
-        height: 110px;
-        border-radius: 18px;
-    }
-
-    footer {
-        min-height: 260px;
-        padding: 28px 28px 22px 28px;
-        position: relative;
-    }
-
-    .footer-icons {
-        display: flex;
-        justify-content: flex-end;
-        gap: 18px;
-        margin-bottom: 120px;
-    }
-
-    .footer-icons > a {
-        font-size: 26px;
-    }
-
-    .footer-copy {
-        font-size: 14px;
-        margin-bottom: 20px;
-        color: #2B2726;
-    }
-
-    .footer-links {
-        display: grid;
-        grid-template-columns: 170px 170px;
-        row-gap: 18px;
-        column-gap: 30px;
-        flex-wrap: wrap;
-    }
-
-    .footer-links > a {
-        font-size: 14px;
-        color: #2B2726;
-        text-decoration: none;
-    }
-
-    .scroll-top {
-        position: fixed;
-        right: 18px;
-        bottom: 18px;
-        width: 34px;
-        height: 34px;
-        background-color: #052659;
-        color: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-decoration: none;
-        border-radius: 4px;
-    }
-}
-
-
-
-
-
 
 /* MOBILE */
 @media screen and (max-width: 480px) {
@@ -803,8 +601,7 @@ footer {
 
 
 
-
-/* PARA TABLET TAMBIÉN */
+/* TABLET */
 @media screen and (max-width: 720px) and (min-width: 481px) {
     /* NAV GENERAL */
     nav {
@@ -819,7 +616,7 @@ footer {
         gap: 18px;
     }
 
-    .menus > a {
+    .menus a {
         font-size: 14px;
     }
 
@@ -831,15 +628,16 @@ footer {
     header {
         display: flex;
         margin-top: 56px;
-        min-height: 500px;
-        padding: 0 40px;
+        min-height: 520px;
+        padding-left: 40px;
+        padding-right: 40px;
         align-items: center;
         justify-content: center;
         text-align: left;
     }
 
     .hero-text {
-        max-width: 520px;
+        max-width: 340px;
     }
 
     .hero-text > h1 {
@@ -849,15 +647,15 @@ footer {
     }
 
     .hero-text > p {
-        font-size: 18px;
+        font-size: 15px;
         line-height: 1.4;
-        max-width: 360px;
+        max-width: 330px;
         margin-bottom: 20px;
     }
 
     .hero-btn {
-        font-size: 13px;
-        padding: 10px 18px;
+        font-size: 12px;
+        padding: 10px 16px;
     }
 
 
@@ -885,8 +683,8 @@ footer {
     .project-card {
         width: 100%;
         display: grid;
-        grid-template-columns: calc(100% - 120px) 120px;
-        column-gap: 22px;
+        grid-template-columns: 120px calc(100% - 140px);
+        column-gap: 14px;
         align-items: start;
     }
 
@@ -895,15 +693,20 @@ footer {
         height: 160px;
         object-fit: cover;
         border-radius: 6px;
+        display: block;
+        margin: 0;
     }
 
     .project-card > p {
         font-size: 15px;
         line-height: 1.3;
+        margin: 0;
+        max-width: 100%;
     }
 
     .middle-project {
-        grid-template-columns: calc(100% - 120px) 120px;
+        grid-template-columns: calc(100% - 140px) 120px;
+        column-gap: 14px;
     }
 
     .middle-project > p {
