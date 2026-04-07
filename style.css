@@ -67,7 +67,7 @@ nav > a {
 
 header {
     margin-top: 60px;
-    min-height: 600px;
+    min-height: 750px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -553,8 +553,14 @@ footer {
         margin-top: 100px;
     }
 
+    .about-img {
+        order: 2;
+    }
+
     .about-img img {
-        width: 220px;
+        width: 410px;
+        border-radius: 8px;
+        display: block;
     }
 
     .about-skills {
@@ -563,8 +569,8 @@ footer {
     }
 
     .skill img {
-        width: 100px;
-        height: 100px;
+        width: 110px;
+        height: 110px;
     }
 
     footer {
@@ -727,5 +733,178 @@ footer {
     .footer-links {
         gap: 24px;
         flex-wrap: wrap;
+    }
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 720px) and (min-width: 481px) {
+    /* NAV GENERAL */
+    nav {
+        padding: 10px 18px;
+    }
+
+    .logo > img {
+        height: 26px;
+    }
+
+    .menus {
+        gap: 18px;
+    }
+
+    .menus > a {
+        font-size: 14px;
+    }
+
+    .navi-icon {
+        font-size: 14px;
+    }
+
+    /* INDEX */
+    header {
+        margin-top: 56px;
+        min-height: 620px;
+        padding-left: 52px;
+        padding-right: 24px;
+        align-items: center;
+    }
+
+    .hero-text {
+        max-width: 420px;
+    }
+
+    .hero-text > h1 {
+        font-size: 74px;
+        line-height: 1.05;
+        margin-bottom: 20px;
+    }
+
+    .hero-text > p {
+        font-size: 15px;
+        line-height: 1.35;
+        max-width: 360px;
+        margin-bottom: 26px;
+    }
+
+    .hero-btn {
+        font-size: 11px;
+        padding: 8px 14px;
+    }
+
+
+    /* SECCIONES GENERALES */
+    section {
+        padding: 0 38px;
+    }
+
+    /* INDEX-PROJECTS */
+    #projects {
+        margin-bottom: 110px;
+    }
+
+    #projects > h2 {
+        font-size: 26px;
+        margin-bottom: 36px;
+    }
+
+    .projects-container {
+        display: flex;
+        flex-direction: column;
+        gap: 34px;
+    }
+
+    .project-card {
+        width: 100%;
+        display: grid;
+        grid-template-columns: calc(100% - 120px) 120px;
+        column-gap: 22px;
+        align-items: start;
+    }
+
+    .project-card > img {
+        width: 120px;
+        height: 160px;
+        object-fit: cover;
+        border-radius: 6px;
+    }
+
+    .project-card > p {
+        font-size: 15px;
+        line-height: 1.3;
+    }
+
+    .middle-project {
+        grid-template-columns: calc(100% - 120px) 120px;
+    }
+
+    .middle-project > p {
+        text-align: right;
+    }
+
+
+    /* INDEX-CONTACT */
+    #contact {
+        margin-bottom: 110px;
+    }
+
+    #contact > h2 {
+        font-size: 24px;
+        margin-bottom: 180px;
+    }
+
+    .contact-info {
+        gap: 22px;
+    }
+
+    .contact-info > p {
+        font-size: 15px;
+        line-height: 1.35;
+    }
+
+    .contact-info i {
+        margin-right: 14px;
+    }
+
+
+    /* FOOTER GENERAL */
+    footer {
+        min-height: 220px;
+        padding: 28px 16px 20px 16px;
+    }
+
+    .footer-icons {
+        justify-content: flex-end;
+        gap: 14px;
+        margin-bottom: 90px;
+    }
+
+    .footer-icons > a {
+        font-size: 18px;
+    }
+
+    .footer-copy {
+        font-size: 12px;
+        margin-bottom: 16px;
+    }
+
+    .footer-links {
+        gap: 22px;
+        flex-wrap: wrap;
+    }
+
+    .footer-links > a {
+        font-size: 12px;
+    }
+
+    .scroll-top {
+        width: 32px;
+        height: 32px;
+        right: 16px;
+        bottom: 16px;
     }
 }
